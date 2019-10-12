@@ -1,12 +1,13 @@
-window.onscroll = function(){myFunc};
-var header = document.getElementById("mytopnav");
-var sticky = header.offsetTop;
+window.onscroll = function(){myFunc()};
+
+
 function myFunc(){
-  if (window.pageYoffset > sticky){
-    header.classList.add("sticky");
-  }
-  else{
-    header.classList.remove("sticky");
+  var myTopnav = document.getElementById("myTopnav");
+  var sticky = myTopnav.offsetTop;
+  if (window.pageYOffset >= sticky){
+    myTopnav.classList.add("sticky");
+  }else{
+    myTopnav.classList.remove("sticky");
   }
 }
 function myFunction() {
