@@ -17,7 +17,7 @@
     <a href="#news" id = "items">Contact Me</a>
     <a href="#contact" id = "items">About</a>
     <a href="#about" id = "items">Portfolio</a>
-    <a href="#home" id = "items">Home</a>
+    <a href="index.html" id = "items">Home</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <p>MENU</p>
     </a>
@@ -27,18 +27,14 @@
   </div>
 
   <div class="row1" id = "ro1">
-    <div class = "column1 left">
-      <h2>EXCERPT</h2>
-      <p>Some text<br>
-         Some text<br>
-         Some text<br>
-         Some text<br>
-         Some text<br>
-         Some text<br>
-         Some text<br>
-         Some text<br>
-         Some text<br>
-      </p>
+    <div class = "column1 left" id="leftCol">
+      <p style="font-size:24px "><strong>Title: </strong> Wildlife Photography
+      <strong><br>Year: </strong> 2019<br>
+    </p>
+    <p style="font-size: 20px">Wildlife photography is a loosely-defined profession which demands a passion for nature and art.
+       Wildlife photographers make a career of traveling to remote areas and taking pictures of wild animals and natural scenery.Even with a hide, the photographer may have only several seconds in which to take the photo, due to the unpredictability of wild animals,
+       making agility and patience necessary traits. Persistence is also useful. Wildlife Photography requires lot of patience and hardwork.</p>
+  <p style="font-size: 20px">Here, I present some of my work where I can captured birds.</p>
     </div>
     <div class = "column1 right" >
       <div class="slideshow-container">
@@ -55,24 +51,58 @@
 
         <div class="mySlides fade">
           <div class="numbertext">3 / 13</div>
-          <img src="images1/birds/bird2.JPG" style="width:100%" id = "img1">
+          <img src="images1/birds/bird2.JPG" style="width:100%" onclick = "switchPage()" id = "img1">
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">4 / 13</div>
-          <img src="images1/birds/bird12.jpeg" style="width:100%" id = "img1">
+          <img src="images1/birds/bird12.jpeg" style="width:100%" onclick = "switchPage()" id = "img1">
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">5 / 13</div>
-          <img src="images1/birds/bird10.JPG" style="width:100%" id = "img1">
+          <img src="images1/birds/bird10.JPG" style="width:100%" onclick = "switchPage()" id = "img1">
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">6 / 13</div>
-          <img src="images1/birds/bird11.jpeg" style="width:100%" id = "img1">
+          <img src="images1/birds/bird11.jpeg" style="width:100%" onclick = "switchPage()" id = "img1">
         </div>
 
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 13</div>
+          <img src="images1/birds/bird7.JPG" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 13</div>
+          <img src="images1/birds/bird4.JPG" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">9 / 13</div>
+          <img src="images1/birds/bird5.JPG" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">10 / 13</div>
+          <img src="images1/birds/bird8.JPG" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">11 / 13</div>
+          <img src="images1/birds/bird3.JPG" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">12 / 13</div>
+          <img src="images1/birds/bird1.JPG" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">13 / 13</div>
+          <img src="images1/birds/bird9.JPG" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -84,23 +114,23 @@
     <div class = "column">
       <div class="imgs0" onclick="switchPage();currentSlide(1)"><img src="images1/img1.png"></div>
       <div class="imgs6" onclick="switchPage();currentSlide(2)"><img src="images1/birds/bird6.JPG"></div>
-      <div class="imgs2"><img src="images1/birds/bird2.JPG"></div>
+      <div class="imgs2" onclick="switchPage();currentSlide(3)"><img src="images1/birds/bird2.JPG"></div>
     </div>
     <div class = "column">
-      <div class="imgs12"><img src= "images1/birds/bird12.jpeg"></div>
-      <div class="imgs10"><img src="images1/birds/bird10.JPG"></div>
-      <div class="imgs11"><img src="images1/birds/bird11.jpeg"></div>
+      <div class="imgs12" onclick="switchPage();currentSlide(4)"><img src= "images1/birds/bird12.jpeg"></div>
+      <div class="imgs10" onclick="switchPage();currentSlide(5)"><img src="images1/birds/bird10.JPG"></div>
+      <div class="imgs11" onclick="switchPage();currentSlide(6)"><img src="images1/birds/bird11.jpeg"></div>
     </div>
     <div class = "column">
-      <div class="imgs7"><img src="images1/birds/bird7.JPG"></div>
-      <div class="imgs4"><img src="images1/birds/bird4.JPG"></div>
-      <div class="imgs5"><img src="images1/birds/bird5.JPG"></div>
+      <div class="imgs7" onclick="switchPage();currentSlide(7)"><img src="images1/birds/bird7.JPG"></div>
+      <div class="imgs4" onclick="switchPage();currentSlide(8)"><img src="images1/birds/bird4.JPG"></div>
+      <div class="imgs5" onclick="switchPage();currentSlide(9)"><img src="images1/birds/bird5.JPG"></div>
     </div>
     <div class = "column">
-      <div class="imgs8"><img src="images1/birds/bird8.JPG"></div>
-      <div class="imgs3"><img src="images1/birds/bird3.JPG"></div>
-      <div class="imgs1"><img src="images1/birds/bird1.JPG"></div>
-      <div class="imgs13"><img src="images1/birds/bird9.JPG"></div>
+      <div class="imgs8" onclick="switchPage();currentSlide(10)"><img src="images1/birds/bird8.JPG"></div>
+      <div class="imgs3" onclick="switchPage();currentSlide(11)"><img src="images1/birds/bird3.JPG"></div>
+      <div class="imgs1" onclick="switchPage();currentSlide(12)"><img src="images1/birds/bird1.JPG"></div>
+      <div class="imgs13" onclick="switchPage();currentSlide(13)"><img src="images1/birds/bird9.JPG"></div>
     </div>
 </body>
 </html>
