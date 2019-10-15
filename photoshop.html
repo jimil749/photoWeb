@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel = "stylesheet" type = "text/css" href = "css1/grid.css">
+  <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type = "text/javascript"></script>
+  <script type = "text/javascript" src = "js1/bird.js">
+  </script>
+  <title>Photoshop</title>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href = "index.html">
+    <img src = "images1/logoReal.png" alt = "LOGO" id = "logo">
+    <a href="#news" id = "items">Contact Me</a>
+    <a href="#contact" id = "items">About</a>
+    <a href="#about" id = "items">Portfolio</a>
+    <a href="index.html" id = "items">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <p>MENU</p>
+    </a>
+  </div>
+  <div class="header">
+    <h1>MAGIC OF PHOTOSHOP</h1>
+  </div>
+
+  <div class="row1" id = "ro1">
+    <div class = "column1 left" id="leftCol">
+      <p style="font-size:24px "><strong>Title: </strong> Creative Art
+      <strong><br>Year: </strong> 2019<br>
+      <strong>Category: </strong> Photoshop
+    </p>
+    <p style="font-size: 20px">Re-touching photos is practically an art in its own right. Tinkering and playing with photographs to completely remake an image
+    is an art on its own. Photoshop can retouch your photos and remove unwanted spots from photos by using few tools. Photoshop is like magical wand
+  for all the photographers out there to enhace their Photography skillset.</p>
+  <p style="font-size: 20px">Here, I present some of my work where I used photoshop to make unique and fun photos.</p>
+    </div>
+    <div class = "column1 right" >
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 9</div>
+          <img src="images1/photoshop/ps1.jpg" style="width:100%" onclick = "switchPage()"id = "img1">
+          <!-- <div class="text">Bubble Photography</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 9</div>
+          <img src="images1/photoshop/ps2.jpg" style="width:100%" onclick="switchPage()"id = "img1"></a>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 9</div>
+          <img src="images1/photoshop/ps3.jpg" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 9</div>
+          <img src="images1/photoshop/ps4.jpg" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 9</div>
+          <img src="images1/photoshop/ps5.jpg" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 9</div>
+          <img src="images1/photoshop/ps6.jpg" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 9</div>
+          <img src="images1/photoshop/ps7.jpg" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 9</div>
+          <img src="images1/photoshop/ps8.jpg" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">9 / 9</div>
+          <img src="images1/photoshop/ps9.jpg" style="width:100%" onclick = "switchPage()" id = "img1">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id = "ro">
+    <div class = "column">
+      <div class="imgs0" onclick="switchPage();currentSlide(1)"><img src="images1/photoshop/ps1.jpg"></div>
+      <div class="imgs6" onclick="switchPage();currentSlide(2)"><img src="images1/photoshop/ps2.jpg"></div>
+
+
+    </div>
+    <div class = "column">
+      <div class="imgs2" onclick="switchPage();currentSlide(3)"><img src="images1/photoshop/ps3.jpg"></div>
+      <div class="imgs13" onclick="switchPage();currentSlide(4)"><img src="images1/photoshop/ps4.jpg"></div>
+    </div>
+    <div class = "column">
+      <div class="imgs12" onclick="switchPage();currentSlide(5)"><img src= "images1/photoshop/ps5.jpg"></div>
+      <div class="imgs10" onclick="switchPage();currentSlide(6)"><img src="images1/photoshop/ps6.jpg"></div>
+    </div>
+
+    <div class = "column">
+      <div class="imgs11" onclick="switchPage();currentSlide(7)"><img src="images1/photoshop/ps7.jpg"></div>
+      <div class="imgs7" onclick="switchPage();currentSlide(8)"><img src="images1/photoshop/ps8.jpg"></div>
+      <div class="imgs4" onclick="switchPage();currentSlide(9)"><img src="images1/photoshop/ps9.jpg"></div>
+    </div>
+
+</body>
+</html>

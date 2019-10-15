@@ -116,14 +116,14 @@ body{
   margin: auto;
 }
 
-/* Hide the images by default */
+
 .mySlides:not(:first-child) {
   display: none;
 }
 
 #img1{
   padding-top: 12px;
-  height: 500px;
+  height:500px;
 }
 
 .prev, .next {
@@ -162,7 +162,7 @@ body{
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;

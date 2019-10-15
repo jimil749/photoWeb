@@ -10,6 +10,16 @@ function myFunc(){
     myTopnav.classList.remove("sticky");
   }
 }
+
+// function leftSticky(){
+//   var leftCol = document.getElementById("leftCol");
+//   var sticky = leftCol.offsetTop;
+//   if (window.pageYOffset >= sticky){
+//     leftCol.classList.add("sticky");
+//   }else{
+//     leftCol.classList.remove("sticky");
+//   }
+// }
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
