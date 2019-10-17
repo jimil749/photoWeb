@@ -4,6 +4,8 @@
 
 body{
   background-color: #e8e8e8;
+  margin: 0;
+  background-image: url("../images1/background.jpeg") repeat 0 0;
 }
 .topnav {
  background-color: #e8e8e8;
@@ -150,6 +152,7 @@ body{
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+  cursor: url("../images1/left_cursor.png");
 }
 
 .text {
@@ -219,6 +222,7 @@ div[class^="imgs"]{
 }
 
 div[class^="imgs"]:hover{
+  cursor: pointer;
   z-index: 1;
   -ms-transform: scale(1.25);
   -webkit-transform: scale(1.25);
@@ -248,16 +252,14 @@ div[class^="imgs"]:hover{
 
 .left{
   width: 28%;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .right{
   width: 72%;
-  cursor: url("images1/grid.png"), auto;
+  cursor: url("../images1/grid_cursor.png"), auto;
 }
-.cust-cursor{
-  cursor: url("images1/grid.png"),auto;
-}
+
 
 
 @media screen and (max-width: 600px){
