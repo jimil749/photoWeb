@@ -1,8 +1,16 @@
 window.onscroll = function(){myFunc()};
 
 
+let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
+console.log(navBarToggle);
+navBarToggle.addEventListener("click", function() {
+  mainNav.classList.toggle("active");
+});
+
+
 function myFunc(){
-  var myTopnav = document.getElementById("myTopnav");
+  var myTopnav = document.getElementById("navv");
   var sticky = myTopnav.offsetTop;
   if (window.pageYOffset >= sticky){
     myTopnav.classList.add("sticky");
@@ -20,14 +28,6 @@ function myFunc(){
 //     leftCol.classList.remove("sticky");
 //   }
 // }
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
 
 function switchPage(){
   var x = document.getElementById("ro");

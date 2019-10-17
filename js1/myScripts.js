@@ -2,25 +2,33 @@ window.onscroll = function(){myFunc()};
 
 
 function myFunc(){
-  var myTopnav = document.getElementById("myTopnav");
+  var myTopnav = document.getElementById("navv");
   var sticky = myTopnav.offsetTop;
   if (window.pageYOffset >= sticky){
     myTopnav.classList.add("sticky");
+    myTopnav.style.color = "white";
   }else{
     myTopnav.classList.remove("sticky");
   }
-
+  console.log(myTopnav.style.color);
 }
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+// function myFunction() {
+//   var x = document.getElementById("myTopnav");
+//   if (x.className === "topnav") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "topnav";
+//   }
   // console.log("HI");
-   
-}
+
+//}
+
+let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
+console.log(navBarToggle);
+navBarToggle.addEventListener("click", function() {
+  mainNav.classList.toggle("active");
+});
 
 // var slideIndex = 1;
 // showSlides(slideIndex);
