@@ -68,6 +68,11 @@ body{
   background-color: #e8e8e8;
 }
 
+ /* @media screen and (max-width: 600px) {
+  #img1{
+    height: 450px;
+  }
+} */
 @media screen and (min-width: 768px) {
   .navbar {
     display: flex;
