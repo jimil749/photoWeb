@@ -32,6 +32,7 @@ body{
 .nav-links,
 .logo {
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
   color: black;
 }
 
@@ -95,10 +96,8 @@ body{
   .navbar-toggle {
     display: none;
   }
-
-  .logo:hover,
   .nav-links:hover {
-    border-bottom: 3px solid black;
+    color: #d3d3d3;
   }
 }
 

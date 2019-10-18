@@ -3,7 +3,7 @@
 }
 
 body{
-  background-color: white;
+  background-color: #d3d3d3;
   margin: 0;
 }
 * {
@@ -96,9 +96,8 @@ body{
     display: none;
   }
 
-  .logo:hover,
   .nav-links:hover {
-    border-bottom: 3px solid black;
+    color: #d3d3d3;
   }
 }
 
@@ -116,10 +115,16 @@ body{
 .header{
   font-family: Helvetica;
   font-size: 25px;
-  padding-top: 60px;
+  padding-top: 75px;
   padding-left: 40px;
+  text-align: center;
 }
 
+.parag{
+  font-family: serif;
+  text-align: center;
+  font-size: 22px;
+}
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -164,17 +169,46 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
-/* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
+  }
+}
+
+.row{
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column{
+  float: left;
+  padding : 10px;
+}
+
+.left{
+  width: 40%;
+  /* overflow-y: scroll; */
+}
+
+.right{
+  width: 60%;
+}
+
+
+
+@media screen and (max-width: 600px){
+  .column{
+    width:100%;
   }
 }

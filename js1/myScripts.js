@@ -4,13 +4,14 @@ window.onscroll = function(){myFunc()};
 function myFunc(){
   var myTopnav = document.getElementById("navv");
   var sticky = myTopnav.offsetTop;
-  if (window.pageYOffset >= sticky){
+  if (window.pageYOffset > sticky){
     myTopnav.classList.add("sticky");
-    myTopnav.style.color = "white";
+    myTopnav.backgroundColor = "#d3d3d3";
   }else{
     myTopnav.classList.remove("sticky");
+    myTopnav.backgroundColor = "#717171";
   }
-  console.log(myTopnav.style.color);
+  console.log(myTopnav.backgroundColor);
 }
 // function myFunction() {
 //   var x = document.getElementById("myTopnav");
@@ -25,7 +26,7 @@ function myFunc(){
 
 let mainNav = document.getElementById("js-menu");
 let navBarToggle = document.getElementById("js-navbar-toggle");
-console.log(navBarToggle);
+
 navBarToggle.addEventListener("click", function() {
   mainNav.classList.toggle("active");
 });

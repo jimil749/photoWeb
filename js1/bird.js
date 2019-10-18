@@ -12,11 +12,14 @@ navBarToggle.addEventListener("click", function() {
 function myFunc(){
   var myTopnav = document.getElementById("navv");
   var sticky = myTopnav.offsetTop;
-  if (window.pageYOffset >= sticky){
+  if (window.pageYOffset > sticky){
     myTopnav.classList.add("sticky");
+    myTopnav.style.backgroundColor = "#d3d3d3";
   }else{
     myTopnav.classList.remove("sticky");
+    myTopnav.style.backgroundColor = "#717171";
   }
+
 }
 
 // function leftSticky(){

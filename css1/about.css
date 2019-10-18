@@ -3,7 +3,7 @@
 }
 
 body{
-  background-color: white;
+  background-color: #d3d3d3;
   margin: 0;
 }
 * {
@@ -95,9 +95,8 @@ body{
     display: none;
   }
 
-  .logo:hover,
   .nav-links:hover {
-    border-bottom: 3px solid black;
+    color: #d3d3d3;
   }
 }
 

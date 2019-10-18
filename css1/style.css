@@ -109,10 +109,12 @@ body{
   position: fixed;
   top:0;
   width: 100%;
+  background-color: #d3d3d3;
 }
 
 .sticky + .slideshow-container{
   padding-top: 60px;
+
 }
 
 
@@ -175,7 +177,7 @@ body{
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 80px 12px;
+  padding: 35px 12px;
   position: absolute;
   top: 0;
 }
